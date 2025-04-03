@@ -1,17 +1,17 @@
 var wms_layers = [];
 
 
-        var lyr_EsriTopographic_0 = new ol.layer.Tile({
-            'title': 'Esri Topographic',
+        var lyr_ESRIStandard_0 = new ol.layer.Tile({
+            'title': 'ESRI Standard',
             'type':'base',
             'opacity': 1.000000,
             
             
             source: new ol.source.XYZ({
             attributions: ' ',
-                url: 'https://server.arcgisonline.com/arcgis/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}'
+                url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}'
             })
         });
 
-lyr_EsriTopographic_0.setVisible(true);
-var layersList = [lyr_EsriTopographic_0];
+lyr_ESRIStandard_0.setVisible(true);
+var layersList = [lyr_ESRIStandard_0];
