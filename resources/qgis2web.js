@@ -9,7 +9,7 @@ var map = new ol.Map({
 });
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([-5157405.703664, -2749163.879664, -5155756.571467, -2747879.737589], map.getSize());
+map.getView().fit([-4808376.206782, -2621285.947337, -4807962.541744, -2620969.389344], map.getSize());
 
 ////small screen definition
     var hasTouchScreen = map.getViewport().classList.contains('ol-touch');
@@ -468,11 +468,11 @@ var bottomAttribution = new ol.control.Attribution({
 map.addControl(bottomAttribution);
 
 var attributionList = document.createElement('li');
-// attributionList.innerHTML = `
-// 	<a href="https://github.com/qgis2web/qgis2web">qgis2web</a> &middot;
-// 	<a href="https://openlayers.org/">OpenLayers</a> &middot;
-// 	<a href="https://qgis.org/">QGIS</a>	
-// `;
+attributionList.innerHTML = `
+	<a href="https://github.com/qgis2web/qgis2web">qgis2web</a> &middot;
+	<a href="https://openlayers.org/">OpenLayers</a> &middot;
+	<a href="https://qgis.org/">QGIS</a>	
+`;
 var bottomAttributionUl = bottomAttribution.element.querySelector('ul');
 if (bottomAttributionUl) {
   bottomAttribution.element.insertBefore(attributionList, bottomAttributionUl);
