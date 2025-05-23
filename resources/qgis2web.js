@@ -1,10 +1,13 @@
-
 var map = new ol.Map({
     target: 'map',
     renderer: 'canvas',
     layers: layersList,
     view: new ol.View({
-         maxZoom: 28, minZoom: 1
+        maxZoom: 28, minZoom: 1
+    }),
+    controls: ol.control.defaults({
+        zoom: false,
+        rotate: false
     })
 });
 
@@ -16,6 +19,7 @@ map.getView().fit([-4808376.206782, -2621285.947337, -4807962.541744, -2620969.3
     var isSmallScreen = window.innerWidth < 650;
 
 ////controls container
+
 
     //top left container
     var topLeftContainer = new ol.control.Control({
@@ -502,7 +506,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 //move controls inside containers, in order
-    //zoom
+    // zoom
     var zoomControl = document.getElementsByClassName('ol-zoom')[0];
     if (zoomControl) {
         topLeftContainerDiv.appendChild(zoomControl);
@@ -538,3 +542,5 @@ document.addEventListener('DOMContentLoaded', function() {
     if (attributionControl) {
         bottomRightContainerDiv.appendChild(attributionControl);
     }
+
+   
