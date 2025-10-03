@@ -108,7 +108,7 @@
         var id = single && single.get ? single.get('customId') : null;
         if (id) {
           console.log("Clicou no marker:", id);
-          // window.ReactNativeWebView.postMessage(JSON.stringify({ type: 'markerClick', id: id }));
+           window.ReactNativeWebView.postMessage(JSON.stringify({ type: 'markerClick', id: id }));
         }
       });
     }
