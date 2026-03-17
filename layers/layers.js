@@ -9,8 +9,8 @@ var lyr_CartoDB__0 = new ol.layer.Tile({
 
     source: new ol.source.XYZ({
         attributions: ' ',
-        // url: 'https://basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png',
-        url: 'https://basemaps.cartocdn.com/dark_all/{z}/{x}/{y}@2x.png',
+        url: 'https://basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png',
+        // url: 'https://basemaps.cartocdn.com/dark_all/{z}/{x}/{y}@2x.png',
         tilePixelRatio: 2,
         renderer: 'canvas'
     })
