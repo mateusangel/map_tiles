@@ -2,16 +2,14 @@ var wms_layers = [];
 
 
 var lyr_CartoDB__0 = new ol.layer.Tile({
-    'title': 'CartoDB_',
+    'title': 'CARTO Voyager',
     'type': 'base',
     'opacity': 1.000000,
 
 
     source: new ol.source.XYZ({
-        attributions: ' ',
-        url: 'https://basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png',
-        // url: 'https://basemaps.cartocdn.com/dark_all/{z}/{x}/{y}@2x.png',
-        tilePixelRatio: 2,
+        attributions: '&copy; CARTO &copy; OpenStreetMap contributors',
+        url: 'https://basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png?key=cb1_2yev_1_bf6800eaa510c2b4a2042bd0',
         renderer: 'canvas'
     })
 });
